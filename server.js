@@ -22,4 +22,8 @@ app.post("/api/sales", (req, res) => {
   res.json({ ok: true });
 });
 
+app.get("/api/sales", (req, res) => {
+  res.json(sales);
+});
+
 app.listen(3000, () => console.log("Running"));
